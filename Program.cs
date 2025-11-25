@@ -28,7 +28,6 @@ app.UseSwaggerUI(c =>
 app.UseCors("all");
 app.MapControllers();
 
-// NO usar app.Urls.Add() → Render ya configura el puerto automáticamente
-// Eliminar esto evita el 404 en producción
+// No usar app.Urls.Add() en Render
 
 app.Run();
